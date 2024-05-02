@@ -1,63 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <title>Welcome - Page</title>
+<link rel="stylesheet" href="css/style.css">
+    </head>
+        <body>
+<div class="topnav">
+    <a href="./">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact Us</a>
+    
+    <div class="topnav-right">
+        <a href="signup.html">Sign Up</a>
+        <a href="signin.html">Sign In</a>
+    </div>
+</div>
+<div class="header">
+    <h1>Talk To Us</h1>
+</div>
+        
+<div class="row">
+    <div class="content">
     <h1>Forms</h1>
-    <form action="">
+    <form action="" method="" class="contact_form">
         <label for="Fn">Fullname:</label><br>
         <input type="text" id="Fn" placeholder="Fullname"><br><br>
-        <input type="number" placeholder="Age"><br><br>
-        <input type="password" placeholder="Pass"><br><br>
-        <input type="email" placeholder="Email Address"><br><br>
-        <input type="color" placeholder=""><br><br>
-        <input type="range" placeholder=""><br><br>
-        <input type="date" placeholder=""><br><br>
-        <input type="time" placeholder=""><br><br>
 
-        <label for="Basic">Basic</label>
-         <input type="radio" id="Basic" name="level" placeholder="">
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="mail" placeholder="Email address"><br><br>
+        
+        <label for="sb">Subject:</label><br>
+        <select name="" id="sb">
+            <option value="">---Select Subject-</option>
+            <option value="1">Email Support</option>
+            <option value="2">eLearning Support</option>
+            <option value="3">AMS Support</option>
+        </select>
+        <br><br>
+    <label for="ms">Message:</label><br>
+    <textarea cols="30" rows="7" name="message" id="ms"></textarea><br><br>
+    
+    <input type="submit" value="Send Message">
+</form>
+</div>
+<div class="side_bar">
+     <!--Chapter 2 starts here-->
+     <h1>Chapter Two</h1>
+     <p style="text-align: justify; font-family: Arial, Helvetica, sans-serif;line-height: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     <!--Chapter 2 ends here-->    
+</div>
+</div>      
+<div class="footer">
+    Copyright - BBIT 2.1 &copy; - Allrights Reserved
+</div>
 
-         <label for="Intermediate">Intermediate</label>
-         <input type="radio" id="Intermediate" name="level" placeholder="">
-
-        <label for="Advanced">Advanced</label>
-         <input type="radio" id="Advanced" name="level" placeholder="">
-<br><br>
-<input type="checkbox" id="Swahili" value="Swahili" name="Swahili">
-<label for="Swahili">Swahili</label><br>
-<input type="checkbox" id="English" value="English" name="English">
-<label for="English">English</label><br>
-<input type="checkbox" id="Spanish" value="Spanish" name="Spanish">
-<label for="Spanish">Spanish</label><br>
-<input type="checkbox" id="Japanese" value="Japanese" name="Japanese">
-<label for="Japanese">Japanese</label><br>
-
-<br>
-
-<textarea cols="30" rows="10"></textarea>
-
-<br><br>
-
-<select name="" id="">
-    <option value="">---Select Gender-</option>
-    <option value="1">Female</option>
-    <option value="2">Male</option>
-    <option value="3">Rather not say</option>
-</select>
-
-<br><br>
-<input type="submit" value="Save Details">
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    </form>
 </body>
 </html>

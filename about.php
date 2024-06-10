@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" >
-        <title>Welcome - Page</title>
-<link rel="stylesheet" href="css/style.css">
-    </head>
-        <body>
-<div class="topnav">
-    <a href="./">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact Us</a>
-    
-    <div class="topnav-right">
-        <a href="signup.html">Sign Up</a>
-        <a href="signin.html">Sign In</a>
-    </div>
-</div>
+<?php include_once("templates/header.php");?>
+<?php include_once("templates/nav.php");?>
 <div class="header">
     <h1>About Me</h1>
 </div>
@@ -69,16 +51,6 @@
         </tr>
     </table>
 </div>
-<div class="side_bar">
-     <!--Chapter 2 starts here-->
-     <h1>Chapter Two</h1>
-     <p style="text-align: justify; font-family: Arial, Helvetica, sans-serif;line-height: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-     <!--Chapter 2 ends here-->    
-</div>
-</div>      
-<div class="footer">
-    Copyright - BBIT 2.1 &copy; - Allrights Reserved
-</div>
-
-</body>
-</html>
+<?php include_once("templates/side_bar.php");?>
+        </div>      
+        <?php include_once("templates/footer.php");?>

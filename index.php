@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" >
-        <title>Welcome - Page</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="topnav">
-            <a href="./">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact Us</a>
-            
-            <div class="topnav-right">
-                <a href="signup.html">Sign Up</a>
-                <a href="signin.html">Sign In</a>
-            </div>
-        </div>
+<?php require_once("templates/header.php");?>
+<?php include_once("templates/nav.php");?>
         <div class="header">
             <h1>Welcome</h1>
         </div>
@@ -29,30 +11,6 @@
                 <p><img class="index_img" src="images/derosa.jpg" style="float: left;" />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="side_bar">
-                <!--Chapter 2 starts here-->
-                <h1>Chapter Two</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <!--Chapter 2 ends here--> 
-                
-                <h1>Chapter Three</h1>
-                <ul>
-                    <li>HTML</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                </ul>
-
-                <ol type="a" start="3">
-                    <li>Yellow</li>
-                    <li>Black</li>
-                    <li>Red</li>
-                    <li>White</li>
-                </ol>
-            </div>
+            <?php include_once("templates/side_bar.php");?>
         </div>      
-        <div class="footer">
-            Copyright - BBIT 2.1 &copy; - Allrights Reserved
-        </div>
-    </body>
-</html>
+        <?php include_once("templates/footer.php");?>

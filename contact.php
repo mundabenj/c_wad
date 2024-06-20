@@ -4,15 +4,15 @@
     include_once("templates/nav.php");
 
     if(isset($_POST["send_message"])){
-        $fullname = mysqli_real_escape_string($conn, addslashes($_POST["fullname"]));
-        $email = mysqli_real_escape_string($conn, addslashes($_POST["email_address"]));
-        $subject_line = mysqli_real_escape_string($conn, addslashes($_POST["subject_line"]));
-        $text_message = mysqli_real_escape_string($conn, addslashes($_POST["message"]));
+        $fullname = mysqli_real_escape_string($conn, $_POST["fullname"]);
+        $email = mysqli_real_escape_string($conn, $_POST["email_address"]);
+        $subject_line = mysqli_real_escape_string($conn, $_POST["subject_line"]);
+        $text_message = mysqli_real_escape_string($conn, $_POST["message"]);
 
         $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, message) VALUES ('$fullname', '$email', '$subject_line', '$text_message')";
         
         if ($conn->query($insert_message) === TRUE) {
-            header("Location: contact.php");
+            header("Location: view_messages.php");
             exit();
         } else {
             echo "Error: " . $insert_message . "<br>" . $conn->error;

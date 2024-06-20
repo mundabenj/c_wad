@@ -1,5 +1,5 @@
         <div class="footer">
-            Copyright - BBIT 2.1 Group C &copy; - Allrights Reserved
+            Copyright &copy; <?php print date("Y"); ?> - Allrights Reserved - BBIT 2.1 Group C
         </div>
     </body>
 </html>

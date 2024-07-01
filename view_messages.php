@@ -53,7 +53,7 @@ if ($sel_msg_res->num_rows > 0) {
             <td><?php print $sel_msg_row["sender_email"]; ?></td>
             <td><?php print '<strong>' . $sel_msg_row["subject_line"] .'</strong> - ' . substr($sel_msg_row["message"], 0, 25) . '...' ?></td>
             <td><?php print date("d-M-Y H:i", strtotime($sel_msg_row["datecreated"])); ?></td>
-            <td>[ <a href="edit_msg.php?messageId=<?php print $sel_msg_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_msg_row["messageId"]; ?>">Del</a> ]</td>
+            <td>[ <a href="edit_msg.php?messageId=<?php print $sel_msg_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_msg_row["messageId"]; ?>" onclick="return confirm('Are you sure you want to delete this message permanently from the database ?')">Del</a> ]</td>
         </tr>
 <?php
   }

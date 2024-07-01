@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2024 at 02:43 PM
+-- Generation Time: Jun 24, 2024 at 12:25 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
   `datecreated` datetime NOT NULL DEFAULT current_timestamp(),
   `dateupdated` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`messageId`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Truncate table before insert `messages`
@@ -82,8 +82,9 @@ TRUNCATE TABLE `messages`;
 --
 
 INSERT INTO `messages` (`messageId`, `sender_name`, `sender_email`, `subject_line`, `message`, `datecreated`, `dateupdated`) VALUES
-(1, 'alex', 'alex@yahoo.com', 'eLearning Support', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '2024-06-13 15:29:15', '2024-06-13 15:29:15'),
-(2, 'Peter', 'peter@yahoo.com', 'eLearning Support', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '2024-06-13 15:37:19', '2024-06-13 15:37:19');
+(1, 'alexander', 'alexokama@yahoo.com', 'eLearning Support', 'Alex - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '2024-06-13 15:29:15', '2024-06-20 15:43:27'),
+(4, 'Anami', 'amani@yahoo.com', 'AMS Support', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit ', '2024-06-20 14:42:24', '2024-06-20 14:42:24'),
+(6, 'James', 'james@yahoo.com', 'AMS Support', 'james pero - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '2024-06-20 14:49:12', '2024-06-20 15:46:41');
 
 -- --------------------------------------------------------
 

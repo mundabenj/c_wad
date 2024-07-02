@@ -11,17 +11,24 @@
         $genderId = mysqli_real_escape_string($conn, $_POST["genderId"]);
         $roleId = mysqli_real_escape_string($conn, $_POST["roleId"]);
 
-        // verify email format
-        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        // verify that the full name contains only letters, space and single quotation
+
+        // verify that the email has the correct format
+
+        if(!filter_var($email_address, FILTER_VALIDATE_EMAIL)){
             header("Location: ?wrong_email_format");
             exit();
         }
-        // verify authoried email domain (strathmore.edu, gmail, yahoo, outlook, etc...)
-        // verify passwors and repeat password are identic
-        // verify the password length is between 8 and 16
-        // verify the new email does not exist already in th db
-        // verify the new username does not exist already in the db
-        // vefiry that the fullname contains only letters and space and a quotation symbol
+        
+        // verify that the email address domain is authorized (Strathmore.edu, gmail.com, yahoo.com, etc)
+
+        // verify that the new email address does not exist already in the database
+        
+        // verify that the new username does not exist already in the database
+        
+        // verify that the password is identical to the repeat password
+        
+        // verify that the password length is between 6 and 16 characters
 
 
         $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, message) VALUES ('$fullname', '$email', '$subject_line', '$text_message')";

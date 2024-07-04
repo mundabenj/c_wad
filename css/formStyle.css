@@ -26,3 +26,7 @@ input[type=submit]{
     color: crimson;
     font-size: small;
 }
+.success_form{
+    color:darkgreen;
+    font-size: small;
+}
